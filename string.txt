@@ -1,0 +1,38 @@
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+         Console.WriteLine("1. Reading From Keyboard");
+         Console.Write("Enter String1: ");
+         String s1 = Console.ReadLine();
+         Console.Write("Enter String2: ");
+         String s2 = Console.ReadLine();
+         Console.WriteLine("2. Finding Lengths");
+         Console.Write("Length Of String 1 Is: ");
+         Console.WriteLine(s2.Length);
+         Console.Write("Length Of String 2 Is: ");
+         Console.WriteLine(s1.Length);
+         Console.WriteLine("3. Comparing Strings");
+         int n = String.Compare(s1, s2);
+         if (n == 0)
+             Console.WriteLine("S1 = S2");
+         else if (n > 0)
+             Console.WriteLine("S1 > S2");
+         else
+             Console.WriteLine("S1 < S2");
+
+         Console.WriteLine("4. Concatenating Strings");
+         String s3 = String.Concat(s1, s2);
+         Console.WriteLine("Concatenated String Is: " + s3);
+         Console.ReadKey();
+        }
+    }
+}

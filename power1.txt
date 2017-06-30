@@ -1,0 +1,27 @@
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i, n,p;
+            float pow=1;
+            Console.Write("Enter The Number: ");
+            n = int.Parse(Console.ReadLine());
+            Console.Write("\nEnter The Power Of Number: ");
+            p = int.Parse(Console.ReadLine());
+            for (i = 1; i <=p; i++)
+            {
+                pow =  pow*n;
+            }
+            Console.WriteLine("\nResult Of " + n + "^"+p+ " Is: " + pow);
+            Console.ReadKey();
+        }
+    }
+}

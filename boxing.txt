@@ -1,0 +1,22 @@
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i =123;
+            object a = (object)i;
+            Console.WriteLine("After Boxing Value Is:" + a);
+            i = (int)a;
+            Console.WriteLine("After Unboxing Value Is: " + i);
+            Console.ReadKey();
+
+        }
+    }
+}
